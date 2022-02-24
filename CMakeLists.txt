@@ -3,7 +3,7 @@ project(new_project VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-file(GLOB TARGET_SRC "./src/*.cpp" "./src/core/*.cpp" "./src/game/*.cpp" "./dependencies/glad/src/*.c")
+file(GLOB TARGET_SRC "./src/*.cpp" "./dependencies/glad/src/*.c")
 
 add_executable(main ${TARGET_SRC})
 
